@@ -65,7 +65,7 @@ try:
         elif (pSniff=="icmp") or (pSniff=="tcp"):
             print("Date: "+ str(now)+ " Protocols: "+ pSniff.upper()+" SRCMAC: "+packet[0].src + " DSTMAC: "+ packet[0].dst + " SRC-IP: "+ packet[0][1].src + " DST-IP: "+packet[0][1].dst , file=sniffLog)
 
-    print("\n*Starting the sniffer....")
+    print("\n*Capturing....")
 
     if pSniff == "0":
         sniff(iface = interface , count=int(packets), timeout = int(timeO) ,prn=packetLog)
