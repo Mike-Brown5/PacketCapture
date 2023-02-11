@@ -1,2 +1,3 @@
 # Packet Sniffer program
-ps: you have to run the program as root
+
+This script that will capture network packets and log the information about them in a file. The script requires the scapy library to be installed and the user must run the script as a root user. The script asks the user to provide the network interface to capture packets from, the number of packets to capture, the timeout for the capture, and the protocol to capture (arp, icmp, bootp, tcp, or all protocols). The logs are stored in a file with the name provided by the user. If the user inputs invalid input or stops the script using a keyboard interrupt, the script will exit.
